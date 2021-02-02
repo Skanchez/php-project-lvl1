@@ -1,5 +1,8 @@
 {
     "name": "hexlet/code",
+    "bin": [
+	    "bin/brain-games"
+    ],
     "description": "first project",
     "authors": [
         {
@@ -7,5 +10,6 @@
             "email": "lococarcajada@gmail.com"
         }
     ],
+    "license": "MIT",
     "require": {}
 }
