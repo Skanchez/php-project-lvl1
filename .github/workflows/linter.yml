@@ -12,6 +12,9 @@ jobs:
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: install
+        run: make install
+        
       - name: Checkout code
         uses: actions/checkout@v2
 
