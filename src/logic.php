@@ -27,7 +27,7 @@ function isEven()
             $counter++;
         } else {
             line("'$answer' is wrong answer ;(. Correct answer was '$question'.");
-	    return line("Let`s try again, $name!");
+            return line("Let`s try again, $name!");
         }
     } while ($counter < 3);
     line("Congratulations, $name!");
