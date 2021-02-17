@@ -2,6 +2,7 @@
 <?php
 
 namespace Brain\Games\Cli;
+use function cli\prompt;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
@@ -11,4 +12,14 @@ if (file_exists($autoloadPath1)) {
 	require_once $autoloadPath2;
 }
 
-hiThere();
+$name = hiThere();
+
+$game = prompt("Choose the game");
+switch ($game) {
+    case 'brain-even':
+        isEven();
+	break;
+    case 'brain-calc':
+        calcThis();
+	break;
+}
