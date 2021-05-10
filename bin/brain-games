@@ -17,9 +17,9 @@ $name = hiThere();
 $game = prompt("Choose the game");
 switch ($game) {
     case 'brain-even':
-        isEven();
+        isEven($name);
 	break;
     case 'brain-calc':
-        calcThis();
+        calcThis($name);
 	break;
 }
