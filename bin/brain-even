@@ -1,7 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-namespace Brain\Even\Cli;
 namespace Brain\Games\Cli;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
@@ -12,5 +11,6 @@ if (file_exists($autoloadPath1)) {
 	require_once $autoloadPath2;
 }
 
-isEven();
+$name = hiThere();
+isEven($name);
 

@@ -5,9 +5,9 @@ namespace Brain\Games\Cli;
 use function cli\line;
 use function cli\prompt;
 
-function isEven()
+function isEven($name)
 {
-    $name = hiThere();
+   // $name = hiThere();
     $counter = 0;
     do {
         line('Answer "yes" if the number is even, otherwise answer "no".');
@@ -30,9 +30,9 @@ function isEven()
     line("Congratulations, $name!");
 }
 
-function calcThis()
+function calcThis($name)
 {
-    $name = hiThere();
+    //$name = hiThere();
     $counter = 0;
     do {
         line("What is the result of the expression?");
